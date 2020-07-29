@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+/*############### DEFAULT SETTING ###########################*/
+* {
+
+  font-family: 'Oxygen', sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#body {   
+    background: rgb(245, 245, 245); 
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0; 
+  
+}
+/*########################### MINI NAV ###############################*/
+.mini-nav {
+  background: #fff;
+  color: #333;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: 0;
+
+}
+
+.sidepanel {
+  height: 250px; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 7.6rem;
+  right: 0;
+  background-color: #333;
+   /* Black*/
+ border-radius: 2%;  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s;  
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  width: 10%;
+  height: 10%;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  padding-right: 2rem;
+  padding-top: .7rem;
+  border: none;
+  display: block;
+  overflow: hidden;
+  margin-top: 3rem; 
+  
+}
+
+.toggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+ 
+}
+
+.cart-wrap {
+  position: fixed;
+  width: 5%;
+  display: block;
+  text-align:center;
+  font-size: .9rem;
+  left: 11rem;
+  
+}
+
+div.cart-wrap img, 
+div.help-style img, 
+div.login-signup img {
+  max-width: 30%;
+  width: 30%;
+  height: 10%;
+  
+}
+
+
+
+.help-style{
+  position: fixed;
+  width: 5%;
+  display: block;
+  text-align:center;
+  font-size: .9rem;
+  right: 4rem;
+
+}
+
+.login-signup  {
+  position: fixed;
+  width:5%;
+  display: block;
+  text-align:center;
+  font-size: .9rem;
+  right: 11rem;
+ 
+}
+
+div.cart-wrap a, 
+div.help-style a,   
+div.login-signup a {
+  text-decoration: none;
+  color: #333;
+
+}
+   
+div.login-signup:hover, 
+div.help-style:hover, 
+div.cart-wrap:hover {
+  opacity: 0.8;
+ 
+}
+
+.header-logo {
+    padding-left: 2rem;
+}
+
+div.header-logo img {
+  max-width: 6%;
+  width: 6%;
+  height: 2%;
+  border-radius: 22%;
+  
+}
+
+/*########################### STICKY NAV SETTING ###############################*/
+
+.sticky {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+.sticky +  #main {
+  padding-top: 60px;
+}
+
+
+
+/*########################### NAV SETTING ###############################*/
+
+.Nav-container {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  
+}
+
+nav ul {
+  background-color: #333;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-container  li {
+  list-style: none;
+  float: left;
+}
+
+
+.Nav-container li a {
+  text-decoration: none;
+  padding: 14px;
+  color: #fff;
+  display: block;
+  min-height: 2rem;
+  text-align: center;
+
+}
+
+/*####################################### NAV HAMBURGER ##############################*/
+
+.open-slide .open-slide-btn {
+  display: none;
+}
+
+.Side-Nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: #333;
+  opacity: 1;
+  overflow-x: hidden;
+  top:0;
+  left: 0;
+  padding-top: 60px;
+  transition: 0.5s;
+ 
+}
+
+.Side-Nav li {
+  
+  list-style: none;
+}
+
+.Side-Nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  display: block;
+  color: beige;
+  font-size: 24px;
+  transition: 0.3s;
+  list-style: none;
+}
+
+.Side-Nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 32px;
+  margin-top: 50px;
+}
+
+
+/*############################### NAV DROPDOWN BUTTON ############################*/
+
+
+
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 16px;
+  font-size: 1.2rem;
+  border: none;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 230px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 13rem;
+  line-height: 1rem;
+  border-top: 2px solid  #3e8e41;
+  
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.dropbtn-2 {
+  background-color: #333;
+  color: white;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown-content-2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 340px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 13rem;
+  line-height: 1rem;
+  border-top: 2px solid  #3e8e41;
+  left: 9.4rem;
+  
+ 
+  
+}
+
+.dropdown-content-2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-2 a:hover {background-color: #ddd;}
+
+.dropdown-2:hover .dropdown-content-2 {display: block;}
+
+.dropdown-2:hover .dropbtn-2 {background-color: #3e8e41;}
+
+
+.dropbtn-3 {
+  background-color: #333;
+  color: white;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown-content-3 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 235px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 13rem;
+  line-height: 1rem;
+  border-top: 2px solid  #3e8e41;
+  left: 16.3rem;
+ 
+  
+}
+
+.dropdown-content-3 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-3 a:hover {background-color: #ddd;}
+
+.dropdown-3:hover .dropdown-content-3 {display: block;}
+
+.dropdown-3:hover .dropbtn-3 {background-color: #3e8e41;}
+
+
+.dropbtn-4 {
+  background-color: #333;
+  color: white;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown-content-4 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 13rem;
+  line-height: 1rem;
+  border-top: 2px solid  #3e8e41;
+  left: 22rem;
+ 
+  
+}
+
+.dropdown-content-4 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-4 a:hover {background-color: #ddd;}
+
+.dropdown-4:hover .dropdown-content-4 {display: block;}
+
+.dropdown-4:hover .dropbtn-4 {background-color: #3e8e41;}
+
+
+
+.show {
+  display:block;
+}
+
+/*######################################### ROWS AND COLOUMS SETTING ###############*/
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+}
+
+.row::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/*######################################### CUSTOM STYLE ###########################*/
+
+#main {
+  transition: margin-left 0.5s;
+  width: 100%;
+ /* padding: 20px; */
+  overflow: hidden;
+}
+
+
+/*######################################### SECTION ONE: IMAGE SLIDER ################*/
+
+.slideshow {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.middle {
+ 
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slide-navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 20%;
+  transform: translateX(-50%, -50%);
+  display: flex;
+}
+
+.bar {
+  width: 50px;
+  height: 20px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bar:hover {
+  background-color: #fff;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.6s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+
+#r4:checked ~ .s1 {
+  margin-left: -60%;
+}
+
+#r5:checked ~ .s1 {
+  margin-left: -80%;
+}
+
+
+
+
+/*
+.image-slider-container {
+  padding: 20px;
+}
+.image-slider-container img {
+  width: 100%;
+  height: 100vh;
+}
+
+.mySlides {
+  display: block;
+ 
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*######################################### MEDIA QUERY: MOBILE  ############################*/
+
+@media (max-width: 600px) {
+  #body {
+    background-color: #0080ff;
+    font-size: 12px !important;
+    overflow: hidden;
+  }
+
+  div.header-logo img {
+    max-width: 100%;
+    width: 40px;
+    height: 40px;
+    border-radius: 18px;
+    position: absolute;
+    left: 5.5rem; 
+    top: 1rem;
+  }
+  
+
+  div.cart-wrap img, 
+  div.login-signup img{
+    max-width: 25px;
+    height: 25px;
+
+     }
+
+  .openbtn, 
+  .help-style, 
+  .cart-wrap .cart-hover p,
+  .login-signup p  {
+    display: none; 
+  }
+
+  div.login-signup img {
+   position: fixed;
+   right: 1.5rem; 
+   top: 1rem;
+   
+  }
+
+  div.cart-wrap img {
+    position: fixed;
+    right: 5rem;
+    top: 1rem;
+  
+  }
+
+  .Nav-container div li  {
+    display: none;
+  }
+
+  .dropdown-content, 
+  .dropdown-content a,
+  .dropdown-content-2, 
+  .dropdown-content-2 a, 
+  .dropdown-content-3, 
+  .dropdown-content-3 a, 
+  .dropdown-content-4, 
+  .dropdown-content-4 a {
+    display: none;
+    border: none;
+
+  }
+
+
+  .mini-nav {
+    background: #fff;
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .open-slide .open-slide-btn {
+    display: block;
+  }
+
+  .open-slide-btn {
+    cursor: pointer;
+    font-size: 18px;
+    padding-top: .5rem;
+  }
+
+  .open-slide {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+
+  }
+ 
+  .Side-Nav {
+    background-color: #333; 
+   
+  }
+
+  .Side-Nav a {
+    font-size:  12px;
+  }
+
+  .Side-Nav .closebtn {
+    margin-top: 0px;
+
+  }
+
+ /*######################################### MEDIA QUERY: IPAD PRO ############################*/
+
+ 
+ 
+
+  
+
+  /*
+  
+  .Nav-container.append li.Nav-hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .Nav-container.append {
+    position: relative;
+  }
+
+  .Nav-container.append li {
+    display: inline-block;
+    float: none;
+  }
+
+
+  .Nav-container.append li  a {
+    display: block;
+    text-align: left;
+  }
+
+}
+
+
+
+
+
+
+
+   
+
+  
