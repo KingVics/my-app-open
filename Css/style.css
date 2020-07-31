@@ -19,6 +19,35 @@ html{
     margin: 0; 
   
 }
+
+/*######################################### ROWS AND COLOUMS SETTING ###############*/
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+}
+
+.row::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
 /*########################### MINI NAV ###############################*/
 .mini-nav {
   background: #fff;
@@ -271,6 +300,8 @@ nav ul {
   top: 13rem;
   line-height: 1rem;
   border-top: 2px solid  #3e8e41;
+  opacity: 0.7;
+ 
   
   
 }
@@ -306,6 +337,7 @@ nav ul {
   line-height: 1rem;
   border-top: 2px solid  #3e8e41;
   left: 9.4rem;
+  opacity: 0.7;
   
  
   
@@ -343,6 +375,7 @@ nav ul {
   line-height: 1rem;
   border-top: 2px solid  #3e8e41;
   left: 16.3rem;
+  opacity: 0.7;
  
   
 }
@@ -379,6 +412,7 @@ nav ul {
   line-height: 1rem;
   border-top: 2px solid  #3e8e41;
   left: 22rem;
+  opacity: 0.7;
  
   
 }
@@ -402,33 +436,6 @@ nav ul {
   display:block;
 }
 
-/*######################################### ROWS AND COLOUMS SETTING ###############*/
-.row {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center; 
-}
-
-.row::after {
-  display: table;
-  content: "";
-  clear: both;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
 
 /*######################################### CUSTOM STYLE ###########################*/
 
@@ -443,22 +450,22 @@ nav ul {
 /*######################################### SECTION ONE: IMAGE SLIDER ################*/
 
 .slideshow {
-  width: 100%;
-  height: 100vh;
+  width: 50%;
+  height: 60%;
   overflow: hidden;
 }
 .middle {
  
   position: absolute;
-  top: 82%;
-  left: 50%;
+  top: 26rem;
+  left: 50%; 
   transform: translate(-50%, -50%);
 }
 
 .slide-navigation {
   position: absolute;
-  bottom: 20px;
-  left: 20%;
+  bottom: 5px;
+  left: 30%;
   transform: translateX(-50%, -50%);
   display: flex;
 }
