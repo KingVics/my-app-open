@@ -1,0 +1,109 @@
+
+ /*######################################### MEDIA QUERY: IPAD ############################*/
+ 
+ @media (max-width: 768px) {
+  #body {
+    background-color: #333;
+  }
+  #body {
+    background-color: #0080ff;
+    font-size: 12px !important;
+    overflow: hidden;
+  }
+
+  div.header-logo img {
+    max-width: 100%;
+    width: 40px;
+    height: 40px;
+    border-radius: 18px;
+    position: absolute;
+    left: 5.5rem; 
+    top: 1rem;
+  }
+  
+
+  div.cart-wrap img, 
+  div.login-signup img{
+    max-width: 25px;
+    height: 25px;
+
+     }
+
+  .openbtn, 
+  .help-style, 
+  .cart-wrap .cart-hover p,
+  .login-signup p  {
+    display: none; 
+  }
+
+  div.login-signup img {
+   position: fixed;
+   right: 1.5rem; 
+   top: 1rem;
+   
+  }
+
+  div.cart-wrap img {
+    position: fixed;
+    right: 5rem;
+    top: 1rem;
+  
+  }
+
+  .Nav-container div li  {
+    display: none;
+  }
+
+  .dropdown-content, 
+  .dropdown-content a,
+  .dropdown-content-2, 
+  .dropdown-content-2 a, 
+  .dropdown-content-3, 
+  .dropdown-content-3 a, 
+  .dropdown-content-4, 
+  .dropdown-content-4 a {
+    display: none;
+    border: none;
+
+  }
+
+
+  .mini-nav {
+    background: #fff;
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .open-slide .open-slide-btn {
+    display: block;
+  }
+
+  .open-slide-btn {
+    cursor: pointer;
+    font-size: 18px;
+    padding-top: .5rem;
+  }
+
+  .open-slide {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+
+  }
+ 
+  .Side-Nav {
+    background-color: #333; 
+   
+  }
+
+  .Side-Nav a {
+    font-size:  12px;
+  }
+
+  .Side-Nav .closebtn {
+    margin-top: 0px;
+
+  }
+
+ }

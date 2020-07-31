@@ -1,0 +1,23 @@
+@media (min-width: 882px) and (max-width: 1024px) { 
+    #body {
+      background-color: #3e8e41;
+    }
+
+    .openbtn {
+        padding-top: 0;
+    }
+
+    .sidepanel {
+        top: 5.9rem;
+        right: 0; 
+      }
+
+    .dropdown-content, 
+    .dropdown-content-2,
+    .dropdown-content-3,
+    .dropdown-content-4 {
+        top: 11rem;  
+        line-height: .5rem;   
+      }
+ 
+   }
