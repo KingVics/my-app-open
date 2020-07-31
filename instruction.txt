@@ -1,0 +1,17 @@
+Instruction One:
+
+1. Open your node cmd and locate your the folder 
+
+something like this 
+
+C:\Users\Office\java\path\repository\mycodes\my-app-open>
+
+2. Delete the node modules folder and package-lock.json
+
+3. Install lite server on the root folder using the code below on your terminal
+npm install --save-dev lite-server
+
+4. Run npm start
+to start the server.
+
+Goodluck!  
